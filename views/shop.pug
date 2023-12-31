@@ -1,0 +1,22 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title #{docTitle}
+        link(rel="stylesheet", href="/css/shop.css")
+    body
+        header 
+            nav
+                ul 
+                    li
+                        a(href="/") Shop
+                    li 
+                        a(href="admin/add-product") Add Product  
+
+        main 
+            h1 Welcome to Sasta D-mart 
+            p List of all products
+            ul 
+                each product in prods 
+                    li= product.title
