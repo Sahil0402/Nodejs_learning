@@ -1,0 +1,21 @@
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/">Shop</a></li>
+                <li><a href="admin/add-product">Add product</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Welcome to Sasta D-mart</h1>
+        <p>List of all products</p>
+        <% if(prods.length> 0){ %>
+            <% for (prod of prods) { %>
+                <li>
+                    <%=prod.title%>
+                </li>
+                <% }} else { %>
+                    <h1>No products found!</h1>
+                    <%}%>
+    </main>
