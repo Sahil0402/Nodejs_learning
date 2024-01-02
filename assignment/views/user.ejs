@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        <%=docTitle%>
+    </title>
+    <link rel="stylesheet" href="/user.css">
+    <link rel="stylesheet" href="/index.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/user">User</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <%if(users.length > 0){%>
+            for(user of users){
+                <li>user</li>
+            }
+        <%}else{%>
+            <h1>No user found!!!</h1>
+        <%}%>
+    </main>
+</body>
+
+</html>
